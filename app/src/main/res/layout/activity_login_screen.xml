@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginIntro">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/title"
+       android:text="Login Here"
+       android:textColor="#223397"
+       android:textSize="25dp"
+       android:layout_below="@id/imageView1"
+       android:layout_marginTop="150dp"
+       android:layout_marginLeft="50dp"
+       android:textStyle="bold"
+       />
+
+ <TextView
+     android:id="@+id/subtitle"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/title"
+     android:layout_marginStart="20dp"
+     android:layout_marginLeft="60dp"
+     android:layout_marginTop="8dp"
+     android:paddingLeft="30dp"
+     android:paddingRight="10dp"
+     android:text="Please Login First to Contine for Next Page"
+     android:textColor="#223397"
+     android:textSize="12sp" />
+
+ <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="-2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="-40dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-40dp"
+        android:rotationX="188"
+        android:scaleType="fitXY"
+        android:src="@drawable/wave"
+        />
+
+  <EditText
+      android:background="@drawable/edittext_bg"
+      android:layout_width="250dp"
+      android:layout_below="@id/subtitle"
+      android:layout_height="40dp"
+      android:hint="Username"
+      android:layout_marginLeft="60dp"
+      android:layout_marginTop="30dp"
+       android:id="@+id/userid"
+      android:textColor="#243BBF"
+      android:padding="9dp"
+  />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_below="@id/userid"
+        android:layout_height="40dp"
+        android:padding="9dp"
+        android:hint="Password"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/password"
+        android:textColor="#243BBF"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+android:layout_below="@id/password"
+        android:backgroundTint="#344BCA"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textvie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account ? Signup"
+        android:layout_below="@id/login"
+android:layout_marginLeft="120dp"
+        android:textColor="#344BCA"
+
+        />
+</RelativeLayout>
